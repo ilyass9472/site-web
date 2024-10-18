@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+        }
+        .permanant {
+            display: grid;
+            align-content: start;
+            width: 100%;
+        }
+        .grid-container {
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(5, 1fr);
+            width: 100%;
+            border-radius: 10px;
+            background-color: rgba(35, 42, 52, 1);
+            overflow: auto;
+        }
+        .grid-container:hover {
+            box-shadow: 5px 5px 5px rgb(135, 138, 141);
+        }
+        .nuage {
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+        }
+        .yen {
+            float: left;
+            width: 60%;
+            text-align: center;
+            padding: 20px;
+            font-size: 10px;
+            font-style: italic;
+        }
+        .yen-6{
+          padding-left: 20px;
+        }
+        .yen-7{
+          padding-left: 200px;
+        
+        }
+        .yen-8{
+          padding-top: 50px;
+        
+        }
+        .yen-9{
+          padding-top: 50px;
+          padding-left: 200px;
+        }
+
+        .div.button{
+         display: grid;
+         justify-items: center;
+        }
+        .button{
+          display: grid;
+          align-items: center;
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        .home-texte{
+    width: 210px;
+    height: 210px;
+    background-color: rgb(243, 54, 68);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    outline: none;
+    transition: background-color 1s;
+}
+
+.home-texte:hover {
+    background-color: rgb(35, 42, 52);
+}
+.services-texte{
+    width: 210px;
+    height: 210px;
+    background-color:  rgb(35, 42, 52);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    outline: none;
+    transition: background-color 1s;
+}
+.services-texte:hover{
+  background-color: rgb(243, 54, 68); 
+}
+.contacts-texte{
+  width: 210px;
+    height: 210px;
+    background-color: rgb(243, 54, 68);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    outline: none;
+    transition: background-color 1s;
+}
+.contacts-texte:hover{
+  background-color:  rgb(35, 42, 52);
+}
+.about-texte{
+  width: 210px;
+    height: 210px;
+    background-color: rgb(35, 42, 52);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    outline: none;
+    transition: background-color 1s;
+}
+.about-texte:hover{
+  background-color: rgb(243, 54, 68);
+}
+.hetler{
+  font-size: larger;
+  background-color: red;
+  position: absolute;
+  border-color: red;
+  border-top: 5px;
+  border-bottom: 5px;
+  border-left: 5px;
+  border-right: 5px;
+  border-radius: 10px;
+  height: 35px;
+  width: 130px;
+  padding-top: 5px;
+}
+    </style>
+</head>
+<body>
+    <div class="permanant">
+        <div class="grid-container">
+            <div class="yen yen-1"><img src="Image1.png" alt="" style="width: 60px; height: 60px;"></div>
+            <div class="yen yen-2"><img src="Image2.png" alt="" style="width: 75px; height: 75px;"></div>
+            <div class="yen yen-3"><img src="Image3.png" alt="" style="width: 75px; height: 75px;"></div>
+            <div class="yen yen-4"><img src="Image4.png" alt="" style="width: 75px; height: 75px;"></div>
+            <div class="yen yen-5"><img src="Image5.png" alt="" style="width: 75px; height: 75px;"></div>
+        </div>
+        <div class="nuage">
+            <div class="yen-6">
+                <img src="image6.png" alt="" style="width: 175px; height: 100px";></div><div class="yen-7">
+                <img src="image6.png" alt="" style="width: 80px; height: 50px";></div>
+            <div class="yen-8">
+                <img src="image6.png" alt="" style="width: 175px; height: 100px";></div>
+            <div class="yen-9">
+                <img src="Image7.png" alt="" style="width: 175px; height: 100px";></div>
+            <div class="yen-10">
+                <img src="Image7.png" alt="" style="width: 150px; height: 90px";>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="button">
+          <div class="home" style="display: grid; justify-items: center;">
+            <button class="home-texte">HOME
+            </button>
+          </div>
+        <div class="services" style="display: grid; justify-items: center;">
+          <button class="services-texte">
+            
+            SERVICES
+          </button>
+        </div>
+        <div class="contacts"  style="display: grid; justify-items: center;">
+          <button class="contacts-texte">
+            CONTACTS
+          </button>
+        </div>
+        <div class="about"  style="display: grid; justify-items: center;">
+          <button class="about-texte">
+            ABOUT
+          </button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+        <div class="montagne" style="display: grid;align-content: start;">
+          <img src="Image10.png" alt="">
+
+        </div>
+        <div class="tree" style="display: grid; justify-items: stretch;">
+          <img src="image11.png" alt="">
+        </div>
+        <div>
+          <div class="miss" style="padding-left: 25vh;padding-bottom: 40vh;">
+          <p class="pentagon" style="font-size: xxx-large;padding-top: 20vh;">
+            if you want more information recherche in another sit web
+          </p>
+          <button class="hetler" style="display: grid;justify-content: stretch;grid-template-columns: 1fr;">
+            visit this site
+          </button>
+        </div>
+        <div class="final" style="display: grid;justify-items: stretch;">
+          <img src="image12.png" alt="">
+        </div>
+        </div>
+</body>
+</html>
